@@ -30,4 +30,4 @@ Contato e Mapa
 
 ###### Assets
 
-Foram usados do repositorio do pexels
+Imagens geradas por IA
