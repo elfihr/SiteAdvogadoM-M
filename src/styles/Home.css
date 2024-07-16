@@ -1,0 +1,253 @@
+/* ========DefaulHome======== */
+
+.Home {
+    margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1A3636;
+}
+
+.description {
+    font-size: 1rem;
+    color: black;
+
+}
+
+.nameIntro {
+    font-size: 1.5rem;
+}
+
+/* =========herosection========= */
+.hero {
+    display: flex;
+    background-color: #e0e0e0;
+    align-items: center;
+    gap: 0 1rem;
+    padding: 1rem 8%;
+}
+
+.heroImg {
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+
+/* =========laywersection========= */
+
+
+.layers {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0 2rem;
+}
+
+.laywerContainer {
+    height: 44rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+    background-color: #e0e0e0;
+    padding: 3rem;
+}
+
+.layerImg {
+    width: 20rem;
+    height: 22rem;
+    border-radius: 0.5rem;
+    box-shadow:0 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* =========casessection========= */
+.cases {
+    background-color: #e0e0e0;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.titledescription {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: #7d7878;
+
+    width: 100%;
+    height: 100px;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    margin-top: 2rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1)80%,
+            rgba(0, 0, 0, 0));
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: max(calc(200px*6), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.item:hover{
+    color: rgb(254, 203, 73);
+    transition: 0.3s ease;
+}
+
+.item1 {
+    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -210px;
+    }
+}
+
+/* =========contato========= */
+.contato {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactFlex {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    gap: 1rem
+}
+.separator{
+    margin-top: 2rem;
+    border-bottom: 1px solid black
+}
+
+.contatoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.boxContact {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+
+
+}
+
+.boxAdress {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.contactMap{
+    box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (max-width:1294px) {
+
+    /* =========laywersection========= */
+    .layers {
+        flex-direction: column;
+        gap: 1rem 0rem;
+    }
+}
+
+@media (max-width:970px) {
+
+    /* =========herosection========= */
+    .hero {
+        flex-direction: column;
+    }
+
+    /* =========laywersection========= */
+    .layers {
+        flex-direction: column;
+        gap: 1rem 0rem;
+    }
+
+ 
+}
+@media (max-width:720px) {
+.contactFlex {
+    flex-direction: column;
+}}
+
+@media (max-width:620px) {
+    .laywerContainer {
+        height: auto;
+        width: auto;
+    }
+
+    .contatoContainer {
+        flex-direction: column;
+        padding: 0 6rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:490px) {
+    .contactFlex {
+        align-items: center;
+        padding:2rem 0;
+        gap: 1rem
+    }
+    
+}
