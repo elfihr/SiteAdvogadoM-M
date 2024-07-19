@@ -74,15 +74,15 @@ const Home = () => {
                     <div className='contatoContainer'>
                         <div className='boxContact'>
                             <WhatsAppIcon className='whatIcon' fontSize='large' />
-                            <a href='https://wa.me/' className='description'>(21) 91234-5678</a>
+                            <a href='x' className='description'>(11) 9xxxx-xxxx</a>
                         </div>
                         <div className='boxContact'>
                             <EmailIcon className='whatIcon' fontSize='large' />
-                            <a href='https://mail.google.com/mail' className='description'>advocados@mm.com</a>
+                            <a href='#' className='description'>advocados@mm.com</a>
                         </div>
                         <div className='boxContact'>
                             <LocalPhoneIcon className='whatIcon' fontSize='large' />
-                            <a href='https://wa.me/' className='description'>(21) 2134-6789</a>
+                            <a href='#' className='description'>(11) xxxx-xxxx</a>
                         </div>
                         <div className='separator'></div>
                         <div className='boxAdress'>
